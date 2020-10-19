@@ -1,13 +1,10 @@
 <?php
 
-require('lib/Adapter.php');
+require('lib/TemplateMethod.php');
 
 function main()
 {
-  $printBanner = new PrintBanner('TEXT');
-  $printBanner->printWeak();
-  echo "\n";
-  $printBanner->printStrong();
-  echo "\n";
+  $stringDisplay = new StringDisplay('text');
+  $stringDisplay->display();
 }
 main();
