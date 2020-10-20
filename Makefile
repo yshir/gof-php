@@ -1,2 +1,2 @@
 test:
-	vendor/bin/phpunit tests/ --color
+	composer dump-autoload && vendor/bin/phpunit tests/ --color

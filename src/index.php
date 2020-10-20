@@ -1,10 +1,17 @@
 <?php
 
-require('lib/TemplateMethod.php');
+require('lib/FactoryMethod.php');
 
 function main()
 {
-  $stringDisplay = new StringDisplay('text');
-  $stringDisplay->display();
+  $factory = new IDCardFactory();
+
+  $idCard1 = $factory->create('User1');
+  $idCard2 = $factory->create('User2');
+  $idCard3 = $factory->create('User3');
+
+  $idCard1->use();
+  $idCard2->use();
+  $idCard3->use();
 }
 main();
