@@ -4,7 +4,7 @@ use PHPUnit\Framework\TestCase;
 
 class FactoryMethodTest extends TestCase
 {
-  public function testStringDisplay()
+  public function testIDCardFactoryCreate()
   {
     $factory = new IDCardFactory();
     ob_start();
